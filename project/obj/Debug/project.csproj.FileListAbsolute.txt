@@ -1,0 +1,175 @@
+c:\users\jorland\documents\visual studio 2013\Projects\project\project\bin\Debug\project.exe.config
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\bin\Debug\project.exe
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\bin\Debug\project.pdb
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\obj\Debug\project.formAdm.resources
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\obj\Debug\project.formCliente.resources
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\obj\Debug\project.formResgistro.resources
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\obj\Debug\project.exe
+C:\Users\jorland\documents\visual studio 2013\Projects\project\project\obj\Debug\project.pdb
+C:\Users\jorland\Documents\Visual Studio 2013\Projects\project\project\obj\Debug\project.FormInicio.resources
+C:\Users\jorland\Documents\Visual Studio 2013\Projects\project\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.FormInicio.resources
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAdm.resources
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.formCliente.resources
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.formResgistro.resources
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\Everson\Desktop\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.FormInicio.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAdm.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formCliente.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formResgistro.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\Everson\Desktop\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.FormInicio.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAdm.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formCliente.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formResgistro.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVoletos.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVoletos.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.FormInicio.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAdm.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formCliente.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formResgistro.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe
+C:\Users\jorland\Desktop\proyecto\FALTA LA PARTE DE JOA-Full2 Proyecto\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVoletos.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.FormInicio.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAdm.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formCliente.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formResgistro.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\Everson\Desktop\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
+E:\Descarga\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+E:\Descarga\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+E:\Descarga\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVoletos.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.FormInicio.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAdm.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formCliente.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formResgistro.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\jorland\Pictures\Proyecto casi completo con detalles\Proyecto casi completo\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAsientos.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAsientos.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVoletos.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.FormInicio.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAdm.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formResgistro.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\Everson\Desktop\Proyecto1.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\Everson\Desktop\Proyecto2.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\Everson\Desktop\Proyecto2.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\Everson\Desktop\Proyecto2.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAsientos.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVoletos.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.FormInicio.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAdm.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formResgistro.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formTiquetes.resources
+C:\Users\jorland\Downloads\Proyecto3.0\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.trayectoria.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe.config
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.exe
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.pdb
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.exe
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAsientos.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVoletos.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.FormInicio.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formAdm.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formResgistro.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.formTiquetes.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.trayectoria.resources
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
+C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
