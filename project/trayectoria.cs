@@ -30,7 +30,7 @@ namespace project
 
         private void trayectoria_Load(object sender, EventArgs e)
         {
-            webBrowser1.Navigate(Application.StartupPath + @"\trayectoria.html");
+            //webBrowser1.Navigate(Application.StartupPath + @"\trayectoria.html");
         }
     }
 }
