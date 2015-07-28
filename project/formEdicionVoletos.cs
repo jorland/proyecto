@@ -322,7 +322,11 @@ namespace project
 
         private void button4_Click(object sender, EventArgs e)
         {
-            trayectoria t = new trayectoria();
+            DataGridViewRow fila = dgvVuelos.CurrentRow; //Retorna la fila selecciona del DataGridView (Lista de Vuelos)
+            origen = fila.Cells[2].Value.ToString(); //Guarda el valor del DataGridView (Lista de Vuelos) de la posicion 2 en la variablie Origen
+            destino = fila.Cells[3].Value.ToString(); //Guarda el destino del DataGridView (Lista de Vuelos) de la posicion 3 en la variable destino
+
+            trayectoria t = new trayectoria(origen, destino);
             t.Show();
         }
     }//Fin del formEdicionVoletos
