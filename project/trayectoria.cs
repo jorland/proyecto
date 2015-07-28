@@ -13,7 +13,7 @@ namespace project
 {
     public partial class trayectoria : Form
     {
-        public trayectoria()
+        public trayectoria(string PaisOrigen,string paisDestino)
         {
             InitializeComponent();
         }

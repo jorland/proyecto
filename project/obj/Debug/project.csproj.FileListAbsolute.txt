@@ -173,3 +173,6 @@ C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra
 C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.trayectoria.resources
 C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\obj\Debug\project.csproj.GenerateResource.Cache
 C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra 3\projecto progra 3\project\bin\Debug\project.pdb
+C:\Users\jorland\Documents\GitHub\proyecto\project\bin\Debug\project.exe.config
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.exe
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.pdb
