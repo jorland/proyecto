@@ -176,3 +176,17 @@ C:\Users\jorland\Downloads\Proyecto3.5\Proyecto3.0\Full Proyecto\projecto progra
 C:\Users\jorland\Documents\GitHub\proyecto\project\bin\Debug\project.exe.config
 C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.exe
 C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.pdb
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.csprojResolveAssemblyReference.cache
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.formAsientos.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.formEdicionAviones.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.formEdicionClientes.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.formEdicionVoletos.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.formEdicionVuelos.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.FormInicio.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.formAdm.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.formNuevoAvion.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.formResgistro.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.formTiquetes.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.trayectoria.resources
+C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.csproj.GenerateResource.Cache
