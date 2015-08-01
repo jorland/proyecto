@@ -12,6 +12,7 @@ namespace project
     {
        //ever se la come
         //Jorland se la come tetaRules!!!
+        //prueba 0003 vamso almorzar!!!
         private string nombre;
         private int cantAsientos;
 
