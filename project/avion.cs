@@ -11,6 +11,7 @@ namespace project
     class avion
     {
        //ever se la come
+        //Jorland se la come tetaRules!!!
         private string nombre;
         private int cantAsientos;
 
