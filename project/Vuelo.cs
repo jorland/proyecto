@@ -27,6 +27,7 @@ namespace project
     class Vuelo
     {
         //Variables
+        //prueba git
         private int idVuelo;
         private int idAvion;
         private int millas;
