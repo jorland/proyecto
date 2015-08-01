@@ -10,7 +10,7 @@ namespace project
 {
     class avion
     {
-       
+       //ever se la come
         private string nombre;
         private int cantAsientos;
 
