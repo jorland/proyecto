@@ -192,3 +192,5 @@ C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.trayectoria
 C:\Users\jorland\Documents\GitHub\proyecto\project\obj\Debug\project.csproj.GenerateResource.Cache
 C:\Users\Everson\Documents\GitHub\proyecto\project\bin\Debug\project.exe.config
 C:\Users\Everson\Documents\GitHub\proyecto\project\obj\Debug\project.exe
+C:\Users\jorland\Documents\GitHub\proyecto\project\bin\Debug\project.exe
+C:\Users\jorland\Documents\GitHub\proyecto\project\bin\Debug\project.pdb

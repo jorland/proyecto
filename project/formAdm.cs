@@ -14,6 +14,7 @@ namespace project
     {
         public formAdm()
         {
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             InitializeComponent();
 
         }

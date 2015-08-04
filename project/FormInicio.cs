@@ -16,13 +16,13 @@ namespace project
         public FormInicio()
         {
             InitializeComponent();
-
             pictureBox1.Image = Image.FromFile("User.png");
         }
 
         private void btnResgisto_Click(object sender, EventArgs e)
         {
             formResgistro open = new formResgistro();
+
             open.Show();
         }
 
