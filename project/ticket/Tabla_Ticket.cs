@@ -18,7 +18,7 @@ using System.Data.Linq.Mapping;
 namespace project.ticket
 {
     [Table(Name = "[AEROLINEA_UAM].[dbo].[TICKET]")]
-    class Ticket
+    class Tabla_Ticket
     {
         [Column(Name = "ID_TICKET", IsPrimaryKey = true, DbType = "Int NOT NULL", IsDbGenerated = true)]
         public int ID_TICKET { set; get; }
