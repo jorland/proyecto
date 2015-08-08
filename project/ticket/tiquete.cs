@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
 
 /////////////////////////////////////COMENTARIOS DEL CODIGO///////////////////////////////////////////
 //Fecha de creacion: 27-06-2015                                                                     //   
@@ -14,7 +16,8 @@ using System.Data;
 //Modificado por: johana                                                                            //
 //Descripcion: Store Procedure "PRDB_INGRESA_TIQUETE" para el ingreso de tiquetes                   //
 //Fecha de Modificacion: 06-07-2015                                                                 //
-//Modificado por: Jorland                                                                           //
+//Modificado por: Jorland    
+//
 //Descripcion: Select para a la base de datos en el metodo verTiquetes()                            //
 //                                                                                                  //
 //////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -194,3 +194,6 @@ C:\Users\Everson\Documents\GitHub\proyecto\project\bin\Debug\project.exe.config
 C:\Users\Everson\Documents\GitHub\proyecto\project\obj\Debug\project.exe
 C:\Users\jorland\Documents\GitHub\proyecto\project\bin\Debug\project.exe
 C:\Users\jorland\Documents\GitHub\proyecto\project\bin\Debug\project.pdb
+C:\Users\Johana\Documents\GitHub\proyecto\project\bin\Debug\project.exe.config
+C:\Users\Johana\Documents\GitHub\proyecto\project\obj\Debug\project.exe
+C:\Users\Johana\Documents\GitHub\proyecto\project\obj\Debug\project.pdb
