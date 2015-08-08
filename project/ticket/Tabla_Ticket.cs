@@ -11,11 +11,11 @@ using System.Data.Linq.Mapping;
 
 /////////////////////////////////////COMENTARIOS DEL CODIGO///////////////////////////////////////////
 //Fecha de creacion: 08/08/2015                                                                          //   
-//Creado por: Allan                                                                                     //
+//Creado por: Allan y Johana                                                                            //
 //Descripcion: Clase para el mapeo de la tabla ticket                                                  //
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
-namespace project.ticket
+namespace project
 {
     [Table(Name = "[AEROLINEA_UAM].[dbo].[TICKET]")]
     class Tabla_Ticket

@@ -30,6 +30,8 @@ namespace project
         private string fecha;
         private int idCliente;
 
+        DataContext DC = new DataContext(myConnection.getConnection());
+
         //Metodo constructor que retorna las variables anteriores
         public tiquete(string fecha, int idCliente )
         {
@@ -39,19 +41,23 @@ namespace project
 
         public void ingresarTiquete(tiquete t)
         {
-            //Instancia de la clase myConnection para utilizar la base de datos
+            /* Instancia de la clase myConnection para utilizar la base de datos
             myConnection mc = new myConnection();
             SqlConnection cnn = mc.createConnection();
             SqlCommand command = mc.createCommand(cnn);
+            
+            //Utiliza el Store Procedure de ingreso de tiquetes*/
 
-            //Utiliza el Store Procedure de ingreso de tiquetes
-            command.CommandText = "PRDB_INGRESA_TIQUETE";
-            command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@pFechaVuelo ", t.fecha); //Campo de la BD del SP
-            command.Parameters.AddWithValue("@pIdCliente", t.idCliente); //Campo de la BD del SP
-            cnn.Open(); //Abre la conexion a la BD
-            command.ExecuteNonQuery(); //Ejecuta la busqueda de la BD
-            cnn.Close(); //Cierra la consulta a la BD
+            var newTicket = DC.GetTable<Tabla_Ticket>();
+            Tabla_Ticket tckt = new Tabla_Ticket();
+
+            tckt.FEC_VUELO = t.fecha;
+            tckt.FEC_COMPRA = DateTime.Now.ToString();
+            tckt.ID_CLIENTE = t.idCliente;
+
+            newTicket.InsertOnSubmit(tckt);
+            DC.SubmitChanges();
+
         }
 
         //Metodo para visualizar los tiquetes
