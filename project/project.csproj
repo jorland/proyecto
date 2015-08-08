@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,27 +45,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="avion.cs" />
-    <Compile Include="cliente.cs" />
-    <Compile Include="ClienteDiamante.cs" />
-    <Compile Include="clientePlatino.cs" />
-    <Compile Include="clienteRegular.cs" />
+    <Compile Include="avion\avion.cs" />
+    <Compile Include="cliente\cliente.cs" />
+    <Compile Include="cliente\ClienteDiamante.cs" />
+    <Compile Include="cliente\clientePlatino.cs" />
+    <Compile Include="cliente\clienteRegular.cs" />
+    <Compile Include="cliente\tablaCliente.cs" />
     <Compile Include="formAsientos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formAsientos.Designer.cs">
       <DependentUpon>formAsientos.cs</DependentUpon>
     </Compile>
-    <Compile Include="formEdicionAviones.cs">
+    <Compile Include="avion\formEdicionAviones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formEdicionAviones.Designer.cs">
+    <Compile Include="avion\formEdicionAviones.Designer.cs">
       <DependentUpon>formEdicionAviones.cs</DependentUpon>
     </Compile>
-    <Compile Include="formEdicionClientes.cs">
+    <Compile Include="cliente\formEdicionClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formEdicionClientes.Designer.cs">
+    <Compile Include="cliente\formEdicionClientes.Designer.cs">
       <DependentUpon>formEdicionClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="formEdicionVoletos.cs">
@@ -73,10 +75,10 @@
     <Compile Include="formEdicionVoletos.Designer.cs">
       <DependentUpon>formEdicionVoletos.cs</DependentUpon>
     </Compile>
-    <Compile Include="formEdicionVuelos.cs">
+    <Compile Include="vuelo\formEdicionVuelos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formEdicionVuelos.Designer.cs">
+    <Compile Include="vuelo\formEdicionVuelos.Designer.cs">
       <DependentUpon>formEdicionVuelos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormInicio.cs">
@@ -91,16 +93,16 @@
     <Compile Include="formAdm.Designer.cs">
       <DependentUpon>formAdm.cs</DependentUpon>
     </Compile>
-    <Compile Include="formNuevoAvion.cs">
+    <Compile Include="avion\formNuevoAvion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formNuevoAvion.Designer.cs">
+    <Compile Include="avion\formNuevoAvion.Designer.cs">
       <DependentUpon>formNuevoAvion.cs</DependentUpon>
     </Compile>
-    <Compile Include="formResgistro.cs">
+    <Compile Include="cliente\formResgistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formResgistro.Designer.cs">
+    <Compile Include="cliente\formResgistro.Designer.cs">
       <DependentUpon>formResgistro.cs</DependentUpon>
     </Compile>
     <Compile Include="formTiquetes.cs">
@@ -120,20 +122,20 @@
     <Compile Include="trayectoria.Designer.cs">
       <DependentUpon>trayectoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vuelo.cs" />
+    <Compile Include="vuelo\Vuelo.cs" />
     <EmbeddedResource Include="formAsientos.resx">
       <DependentUpon>formAsientos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formEdicionAviones.resx">
+    <EmbeddedResource Include="avion\formEdicionAviones.resx">
       <DependentUpon>formEdicionAviones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formEdicionClientes.resx">
+    <EmbeddedResource Include="cliente\formEdicionClientes.resx">
       <DependentUpon>formEdicionClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formEdicionVoletos.resx">
       <DependentUpon>formEdicionVoletos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formEdicionVuelos.resx">
+    <EmbeddedResource Include="vuelo\formEdicionVuelos.resx">
       <DependentUpon>formEdicionVuelos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicio.resx">
@@ -142,10 +144,10 @@
     <EmbeddedResource Include="formAdm.resx">
       <DependentUpon>formAdm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formNuevoAvion.resx">
+    <EmbeddedResource Include="avion\formNuevoAvion.resx">
       <DependentUpon>formNuevoAvion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formResgistro.resx">
+    <EmbeddedResource Include="cliente\formResgistro.resx">
       <DependentUpon>formResgistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formTiquetes.resx">
@@ -175,6 +177,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

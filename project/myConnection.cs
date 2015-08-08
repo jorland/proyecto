@@ -11,8 +11,11 @@ namespace project
     class myConnection
     {
         //static myConnection mc = new myConnection();
-        private string sqlConnection = "Data Source = EQUIPO ;Initial catalog=AEROLINEA_UAM;Integrated Security=SSPI";
+        private static string sqlConnection = "Data Source = EQUIPO ;Initial catalog=AEROLINEA_UAM;Integrated Security=SSPI";
 
+        public static string getConnection(){
+            return sqlConnection;
+        }
         //public static SqlConnection  getConnection(){
         //    SqlConnection cnn = mc.createConnection();
         //    return cnn;
