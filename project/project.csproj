@@ -75,7 +75,7 @@
     <Compile Include="formEdicionVoletos.Designer.cs">
       <DependentUpon>formEdicionVoletos.cs</DependentUpon>
     </Compile>
-    <Compile Include="ticket\Ticket.cs" />
+    <Compile Include="ticket\Tabla_Ticket.cs" />
     <Compile Include="vuelo\formEdicionVuelos.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -31,9 +31,8 @@ namespace project
 
         public void actualizarDataGridCriterio()
         {
-            DataSet ds = new DataSet();
-            tiquete.verTiquetesCriterio(cliente.idSeccionActual).Fill(ds, "AEROLINEA_UAM");
-            dataGridView1.DataSource = ds.Tables["AEROLINEA_UAM"];
+
+            dataGridView1.DataSource = tiquete.verTiquetesCriterio(cliente.idSeccionActual);
         }
 
         private void button1_Click(object sender, EventArgs e)

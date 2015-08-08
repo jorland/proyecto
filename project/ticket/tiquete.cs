@@ -16,9 +16,11 @@ using System.Data.Linq.Mapping;
 //Modificado por: johana                                                                            //
 //Descripcion: Store Procedure "PRDB_INGRESA_TIQUETE" para el ingreso de tiquetes                   //
 //Fecha de Modificacion: 06-07-2015                                                                 //
-//Modificado por: Jorland    
-//
+//Modificado por: Jorland                                                                           //
 //Descripcion: Select para a la base de datos en el metodo verTiquetes()                            //
+//Fecha de Modificacion: 08/08/2015                                                                 //
+//Modificado por: Johana y Allan                                                                    //
+//Descripcion: Eliminacion de SP y cambio a uso de Linq                                             //
 //                                                                                                  //
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -30,7 +32,7 @@ namespace project
         private string fecha;
         private int idCliente;
 
-        DataContext DC = new DataContext(myConnection.getConnection());
+        static DataContext DC = new DataContext(myConnection.getConnection());
 
         //Metodo constructor que retorna las variables anteriores
         public tiquete(string fecha, int idCliente )
@@ -41,35 +43,35 @@ namespace project
 
         public void ingresarTiquete(tiquete t)
         {
-            /* Instancia de la clase myConnection para utilizar la base de datos
-            myConnection mc = new myConnection();
-            SqlConnection cnn = mc.createConnection();
-            SqlCommand command = mc.createCommand(cnn);
-            
-            //Utiliza el Store Procedure de ingreso de tiquetes*/
+                       
+            //Utiliza Linq para el ingreso de nuevos ticketes*/
 
-            var newTicket = DC.GetTable<Tabla_Ticket>();
-            Tabla_Ticket tckt = new Tabla_Ticket();
+            var newTicket = DC.GetTable<Tabla_Ticket>();//Variable newTicket que almacena la Tabla Tiquete
+            Tabla_Ticket tckt = new Tabla_Ticket();//variable tckt nueva instancia de la clase Tabla_Ticket
 
-            tckt.FEC_VUELO = t.fecha;
-            tckt.FEC_COMPRA = DateTime.Now.ToString();
-            tckt.ID_CLIENTE = t.idCliente;
+            tckt.FEC_VUELO = t.fecha;//Asigna al prooperty FEC_VUELO de la clase Tabla_Ticket el valor de la fecha del tiquete
+            tckt.FEC_COMPRA = DateTime.Now.ToString();//Asigna al prooperty FEC_COMPRA de la clase Tabla_Ticket el valor de la fecha del sistema
+            tckt.ID_CLIENTE = t.idCliente;//Asigna al prooperty ID_CLIENTE de la clase Tabla_Ticket el valor de la fecha del idCliente
 
-            newTicket.InsertOnSubmit(tckt);
-            DC.SubmitChanges();
+            newTicket.InsertOnSubmit(tckt);//Inserta los valores en la Base de Datos
+            DC.SubmitChanges();//Realiza el commita de la Base de Datos.
 
         }
 
         //Metodo para visualizar los tiquetes
-        public static SqlDataAdapter verTiquetesCriterio(int id_cliente)
+        public static IQueryable<Tabla_Ticket> verTiquetesCriterio(int id_cliente)
         {
-            //Instancia de la clase myConnection para utilizar la base de datos
-            myConnection myConnection = new myConnection(); 
-            string consulta = string.Format("select * from TICKET where ID_CLIENTE = {0} ",id_cliente); //Se declara una variable de tipo String consulta que va a guardar un Select de SQL con la informacion de tiquete
-            SqlConnection conexion = myConnection.createConnection(); //Guarda la conexion a la BD en el objeto "conexion"
-            SqlDataAdapter da = new SqlDataAdapter(consulta, conexion); //Guarda el select y el objeto conexion en el objeto "da"
-            
-            return da; //Retorna el objeto da con la informacion del select y la conexion a la BD
+
+            var consTicket = DC.GetTable<Tabla_Ticket>();//Variable newTicket que almacena la Tabla Tiquete
+
+            var query = from Tik in consTicket
+                        where Tik.ID_CLIENTE.Equals(id_cliente)
+                        //Selecciona todos los datos de la tabla Tabla_Ticket donde el ID_Cliente sea igual al Id_cliente enviado por parametros
+                        //Y almacena el valor en la variable query
+                        select Tik;
+
+
+            return query; //Retorna el resultado de la consulta, para mostrarlo en el datagrid.
 
         } //Fin de verTiquetes
 
