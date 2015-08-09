@@ -31,7 +31,7 @@ namespace project
             
             if (cliente.login(txtNombre.Text, txtContrasena.Text))
 	        {
-                if (cliente.getPrivilegio(txtNombre.Text, txtContrasena.Text).Equals("adm"))
+                if (cliente.getPrivilegio(txtNombre.Text, txtContrasena.Text).Equals("admin"))
                 {
                    
                     formAdm open= new formAdm();

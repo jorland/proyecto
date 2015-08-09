@@ -100,18 +100,17 @@ namespace project
         public void actualizarDataGrid()
         {
             //Instacia para ingresar datos
-            DataSet ds = new DataSet();
-            Vuelo.verVuelos().Fill(ds, "AEROLINEA_UAM"); //Metodo verVuelos que ejecuta el SP que trae la consulta de la base de datos
-            dgvVuelos.DataSource = ds.Tables["AEROLINEA_UAM"]; //Llena las tablas del dataGridView (Lsita de vuelos)
+            //DataSet ds = new DataSet();
+            //Vuelo.verVuelos().Fill(ds, "AEROLINEA_UAM"); //Metodo verVuelos que ejecuta el SP que trae la consulta de la base de datos
+            dgvVuelos.DataSource = Vuelo.verVuelos();
         
         } //Fin del DataGridView (Lista de vuelo)
 
 
         public void actualizarDataGridCriterio()
         {
-            DataSet ds = new DataSet();
-            Vuelo.verVuelos(textBox1.Text).Fill(ds, "AEROLINEA_UAM");
-            dgvVuelos.DataSource = ds.Tables["AEROLINEA_UAM"];
+            // Modificado por everson
+            dgvVuelos.DataSource = Vuelo.verVuelos(textBox1.Text);
         }
 
         private void dgvVuelos_Validating(object sender, CancelEventArgs e)

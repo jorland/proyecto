@@ -130,6 +130,7 @@
             this.listaVuelos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.listaVuelos.Size = new System.Drawing.Size(439, 172);
             this.listaVuelos.TabIndex = 11;
+            this.listaVuelos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listaVuelos_CellContentClick);
             // 
             // IngresarVuelo
             // 

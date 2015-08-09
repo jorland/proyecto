@@ -17,7 +17,7 @@ using System.Windows.Forms;
 //Modificado por: jorland                                                                           //
 //Descripcion: Parametro extra(precioDolares) al ingresar un vuelo...Eliminado de tiquetes          //
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-        
+
 
 
 namespace project
@@ -53,7 +53,7 @@ namespace project
                 {
                     throw new Exception("Ingrese los campos necesarios.");
                 }
-                
+
                 //Si no permite el ingreso de los datos que estan llenos
                 else
                 {
@@ -68,17 +68,20 @@ namespace project
                 //Si el origen del vuelo es igual a el destino muestra el mensaje
                 if (cbOrigenVuelo.Text == cbDestinoVuelo.Text)
                 {
-                   throw new Exception("Seleccione un destino diferente al de origen de vuelo."); 
+                    throw new Exception("Seleccione un destino diferente al de origen de vuelo.");
                 }
 
                 //Si la fecha es igual
                 if (!validarFecha())
                 {
-                    throw new Exception("Seleccione una fecha futura."); 
+                    throw new Exception("Seleccione una fecha futura.");
                 }
-                Vuelo vuelo = new Vuelo(id, idAvion, millas, origenVuelo, destinoVuelo, fechaHora,precioDolares);
-                vuelo.Agregar(vuelo);
-                asignarVueloEnAsientos(idAvion,id);
+
+
+                //Vuelo vuelo = new Vuelo(id, idAvion, millas, origenVuelo, destinoVuelo, fechaHora,precioDolares);
+
+                Vuelo.Agregar(id, origenVuelo, destinoVuelo, millas, fechaHora, idAvion, precioDolares);
+                asignarVueloEnAsientos(idAvion, id);
                 avion.cambiarEstado(idAvion);
                 actualizarDataGrid();
             } //Fin del try
@@ -92,7 +95,7 @@ namespace project
 
 
         //nuevo
-        public void asignarVueloEnAsientos(int idAvion,int idVuelo)
+        public void asignarVueloEnAsientos(int idAvion, int idVuelo)
         {
             //Instacia de la clase myConnection
             myConnection mc = new myConnection();
@@ -100,7 +103,7 @@ namespace project
             SqlCommand command = mc.createCommand(cnn);
             command.CommandText = "PRDB_CAMBIO_ID_VUELO_ASIENTO";
             command.CommandType = CommandType.StoredProcedure;
-            
+
             command.Parameters.AddWithValue("@pIdAvion", idAvion); //Campos de la BD del SP
             command.Parameters.AddWithValue("@pIdVuelo", idVuelo); //Campos de la BD del SP
 
@@ -121,17 +124,17 @@ namespace project
 
             }
 
-            return salida; 
+            return salida;
 
         } //Fin de validarFecha
 
         //Metodo que refresca el datagridview para mostrar los nuevos vuelos 
         public void actualizarDataGrid()
         {
-            
-            DataSet ds = new DataSet();
-            Vuelo.verVuelos().Fill(ds, "AEROLINEA_UAM");
-            listaVuelos.DataSource = ds.Tables["AEROLINEA_UAM"];
+
+            //DataSet ds = new DataSet();
+            //Vuelo.verVuelos().Fill(ds, "AEROLINEA_UAM");
+            listaVuelos.DataSource = Vuelo.verVuelos();
 
         } //Fin de actualizarDataGrid
 
@@ -142,7 +145,7 @@ namespace project
             llenarComboBox();  //Llamado del metodo para llenar los paises Origen/Destino
             llenarComboBoxAviones(); //Llamado del metodo para llenar aviones
         }
-        
+
         //Metodo para llenar el campo de origen y destino con los paises
         public void llenarComboBox()
         {
@@ -206,9 +209,9 @@ namespace project
                 //Solamente si el asiento es disponible lo devuelve
                 if (re["ESTADO"].Equals("D"))
                 {
-                   cbAvion.Items.Add(re["ID_AVION"].ToString());
+                    cbAvion.Items.Add(re["ID_AVION"].ToString());
                 } //Fin del if
-                
+
             }//Fin del While
 
             cnn.Close();//Cierra la coneccion
@@ -223,13 +226,13 @@ namespace project
         //Boton para el llamado de la busqueda de los vuelos con forma de lupa
         private void btBuscarVuelo_Click(object sender, EventArgs e)
         {
-          //Ingresa los datos de la busqueda en este caso el nombre del pais 
-          //de destino al Datagridview 
-          DataSet ds = new DataSet();
-          //Es el boton con una lupa
-          Vuelo.verVuelos(txtBuscar.Text).Fill(ds, "AEROLINEA_UAM");
-          //Llena el Datagridview al precionar el boton de lupa
-          listaVuelos.DataSource = ds.Tables["AEROLINEA_UAM"];
+            ////Ingresa los datos de la busqueda en este caso el nombre del pais 
+            ////de destino al Datagridview 
+            //DataSet ds = new DataSet();
+            ////Es el boton con una lupa
+            //Vuelo.verVuelos(txtBuscar.Text).Fill(ds, "AEROLINEA_UAM");
+            ////Llena el Datagridview al precionar el boton de lupa
+            listaVuelos.DataSource = Vuelo.verVuelos(txtBuscar.Text);
 
         }
 
@@ -250,7 +253,12 @@ namespace project
         {
 
         }
-            
+
+        private void listaVuelos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     } //Fin de la clase formEdicionVuelos
 
 } //Fin del Proyecto
