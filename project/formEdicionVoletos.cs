@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Linq;
+using System.Data.Linq.Mapping;
 
 
 /////////////////////////////////////COMENTARIOS DEL CODIGO///////////////////////////////////////////
@@ -19,8 +21,11 @@ using System.Windows.Forms;
 //Descripcion: Actualiza el DataGridView (Lsita de Vuelos)                                          //
 //Fecha de Modificacion: 06-07-2015                                                                 //
 //Modificado por: Jorland                                                                           //
-//Descripcion: Ingresa los tiquetes a la base datos , Boton de Dollares, Boton Colones y Metodos 
-//             validaciones al comprar
+//Descripcion: Ingresa los tiquetes a la base datos , Boton de Dollares, Boton Colones y Metodos    //
+//             validaciones al comprar   
+//Fecha: 15-08-2015
+//Modificado por: Allan y Johana                                                                    //
+//Descripción: Eliminación de los SP y inclusion de Linq                                            //
 //                                                                                                  //
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -39,7 +44,9 @@ namespace project
         private string fecha;
         private string origen;
         private string destino;
-            
+
+        static DataContext DC = new DataContext(myConnection.getConnection());
+
         public formEdicionVoletos()
         {
             InitializeComponent();
@@ -56,7 +63,22 @@ namespace project
         public void llenarComboBox(int id) //guarda el "id" del vuelo
         {
             
-            //Conneccion a la base de datos
+            var obtAsientos = DC.GetTable<TablaAsientos>();//Variable obtAsientos que obtiene los asientos.
+
+
+            try
+            {
+                var qry = from Asi in obtAsientos
+                      where Asi.ID_VUELO.Equals(id) && Asi.ESTADO.Equals("D")
+                      select Asi;
+
+                comboBox1.Items.Add(qry.ToString());
+            }
+            catch (Exception)
+            {
+
+            }
+            /*Conneccion a la base de datos
             myConnection coneccion = new myConnection();
             SqlConnection cnn = coneccion.createConnection();
             SqlCommand command = coneccion.createCommand(cnn);
@@ -71,7 +93,7 @@ namespace project
             //Try para la captura de excepciones
             try
             {
-                //recorre los datos de paises en la base
+                //recorre los datos de vuelos
                 while (dr.Read())
                 {
                     //Compara el ID_VUELO (de la BD) con el "id" que se paso y revisa que el estado en la BD (campo ESTADO) este "D" = desocupado
@@ -93,9 +115,9 @@ namespace project
             catch (Exception )
             {
                 
-            }
+            }*/
         } //Fin de llenarComboBox
-        
+
         //Actualiza el DataGridView (Lista de vuelo)
         public void actualizarDataGrid()
         {
