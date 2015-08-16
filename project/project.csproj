@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="avion\avion.cs" />
+    <Compile Include="avion\tablaAvion.cs" />
     <Compile Include="cliente\cliente.cs" />
     <Compile Include="cliente\ClienteDiamante.cs" />
     <Compile Include="cliente\clientePlatino.cs" />
