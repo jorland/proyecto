@@ -11,7 +11,7 @@ namespace project
     class myConnection
     {
         //static myConnection mc = new myConnection();
-        private static string sqlConnection = "Data Source = EQUIPO ;Initial catalog=AEROLINEA_UAM;Integrated Security=SSPI";
+        private static string sqlConnection = "Data Source = ALLAN-PC\\SQLEXPRESS2012 ;Initial catalog=AEROLINEA_UAM;Integrated Security=SSPI";
 
         public static string getConnection(){
             return sqlConnection;

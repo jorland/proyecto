@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
 
-namespace project.avion
+namespace project
 {
      [Table(Name = "[AEROLINEA_UAM].[dbo].[AVION]")]
 
