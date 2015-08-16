@@ -60,9 +60,8 @@ namespace project
 
         private void button4_Click(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
-            cliente.verClientes(txtBuscar.Text).Fill(ds, "AEROLINEA_UAM");
-            dataGridView1.DataSource = ds.Tables["AEROLINEA_UAM"];
+
+            dataGridView1.DataSource = cliente.verClientes(txtBuscar.Text);
 
         }
 

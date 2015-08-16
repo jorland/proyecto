@@ -124,6 +124,7 @@
     <Compile Include="trayectoria.Designer.cs">
       <DependentUpon>trayectoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="vuelo\tablaPaises.cs" />
     <Compile Include="vuelo\Vuelo.cs" />
     <EmbeddedResource Include="formAsientos.resx">
       <DependentUpon>formAsientos.cs</DependentUpon>

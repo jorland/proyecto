@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Linq.Mapping;
+using System.Data.Linq.SqlClient;
+using System.Data.Linq;
 
 /////////////////////////////////////COMENTARIOS DEL CODIGO///////////////////////////////////////////
 //Fecha de creacion: 20-06-2015                                                                     //   
@@ -149,37 +152,23 @@ namespace project
         //Metodo para llenar el campo de origen y destino con los paises
         public void llenarComboBox()
         {
-            //Conneccion a la base de datos
-            myConnection coneccion = new myConnection();
-            SqlConnection cnn = coneccion.createConnection();
-            SqlCommand command = coneccion.createCommand(cnn);
-            //Abre la conneccion a la base
-            cnn.Open();
-
-            //Invoca el SP para obtener los paises
-            command.CommandText = "PRDB_OBTIENE_PAIS";
-            command.CommandType = CommandType.StoredProcedure;
-            //Lee los datos de la BD
-            SqlDataReader dr = command.ExecuteReader();
-
-            //Try para la captura de excepciones
+            
             try
             {
-                //recorre los datos de paises en la base
-                while (dr.Read())
-                {
-                    cbOrigenVuelo.Items.Add(dr["DESCRIPCION"].ToString());
-                    cbDestinoVuelo.Items.Add(dr["DESCRIPCION"].ToString());
+                
+                DataContext dc = new DataContext(myConnection.getConnection());
+                var tabla = dc.GetTable<tablaPaises>();
+                var paises = from p in tabla
+                             select p;
 
-                } //Fin del While
+                foreach (var pais in paises)
+                {
+                    cbOrigenVuelo.Items.Add(pais.DESCRIPCION);
+                    cbDestinoVuelo.Items.Add(pais.DESCRIPCION);
+                }
 
                 cbOrigenVuelo.SelectedIndex = 0;//Para que aparezca de una vez el nombre de un pais
                 cbDestinoVuelo.SelectedIndex = 0;//Para que aparezca de una vez el nombre de un pais
-
-                dr.Close();//Cierra la lectura BD
-
-                cnn.Close(); //Cierra la conexion BD
-
             } //Fin del try
 
             //Captura las excepciones
@@ -215,6 +204,20 @@ namespace project
             }//Fin del While
 
             cnn.Close();//Cierra la coneccion
+
+            DataContext dc = new DataContext(myConnection.getConnection());
+            var tabla = dc.GetTable<>();
+            var paises = from p in tabla
+                         select p;
+
+            foreach (var pais in paises)
+            {
+                cbOrigenVuelo.Items.Add(pais.DESCRIPCION);
+                cbDestinoVuelo.Items.Add(pais.DESCRIPCION);
+            }
+
+            cbOrigenVuelo.SelectedIndex = 0;//Para que aparezca de una vez el nombre de un pais
+            cbDestinoVuelo.SelectedIndex = 0;//Para que aparezca de una vez el nombre de un pais
 
         } //Fin de llenar comboBoxAvion
 

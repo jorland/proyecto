@@ -42,11 +42,6 @@ namespace project
         public static string tipoClienteSeccionActual;
 
         private DataContext dataContext = new DataContext(myConnection.getConnection());
-         
-
-
-        
-       
 
         public string TipoCliente
         {
@@ -95,49 +90,56 @@ namespace project
         }
 
         //retorna un SqlDataAdapter que contiene los usuarios filtrados
-        public static SqlDataAdapter verClientes(string condicion)
+        public static IQueryable<tablaCliente> verClientes(string condicion)
         {
-            myConnection myConnection = new myConnection();
-            string consulta = String.Format("select * from CLIENTE WHERE CEDULA = '{0}' OR NOMBRE = '{0}' OR TIPO = '{0}' OR PRIVILEGIO = '{0}' OR CONDICION = '{0}' ", condicion);
-            SqlConnection conexion = myConnection.createConnection();
-            SqlDataAdapter da = new SqlDataAdapter(consulta, conexion);
-            return da;
 
+            DataContext dataContext = new DataContext(myConnection.getConnection());
+            var tabla = dataContext.GetTable<tablaCliente>();
+
+            var clientes = from c in tabla
+                           where c.CEDULA.Equals(condicion) || c.NOMBRE.Equals(condicion)
+                           select c;
+
+            return clientes;
         }
 
         //inactiva cliente con criterios
         public static void inactivarCliente(int id,string estado)
         {
-            myConnection myConnection = new myConnection();
-            SqlConnection conexion = myConnection.createConnection();
-            SqlCommand comando = myConnection.createCommand(conexion);
 
+            DataContext dataContext = new DataContext(myConnection.getConnection());
+            var tabla = dataContext.GetTable<tablaCliente>();
 
-            comando.CommandText = "PRDB_CAMBIA_COND_CLIENTE";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@pID_CLIENTE", id);
-            comando.Parameters.AddWithValue("@pCONDICION",estado );
-            conexion.Open();
-            comando.ExecuteNonQuery();
-            conexion.Close();
+            var cliente = from c in tabla
+                          where c.ID_CLIENTE.Equals(id)
+                          select c;
+
+            foreach (var c in cliente)
+            {
+                c.CONDICION = estado;
+            }
+
+            dataContext.SubmitChanges();
+
         }
 
         //le suma millas al usuario
         public static void agregarMillas(int millas,int idCliente)
         {
-            myConnection mc = new myConnection();
-            SqlConnection cnn = mc.createConnection();
-            SqlCommand command = mc.createCommand(cnn);
-            command.CommandText = "PRDB_AGREGAR_MILLAS";
-            command.CommandType = CommandType.StoredProcedure;
 
-            command.Parameters.AddWithValue("@pmillas", millas);
-            command.Parameters.AddWithValue("@pID_CLIENTE", idCliente);
+            DataContext dataContext = new DataContext(myConnection.getConnection());
+            var tabla = dataContext.GetTable<tablaCliente>();
 
-            cnn.Open();
-            command.ExecuteNonQuery();
-            cnn.Close();
+            var cliente = from c in tabla
+                          where c.ID_CLIENTE.Equals(idCliente)
+                          select c;
 
+            foreach (var c in cliente)
+            {
+                c.MILLAS += millas;
+            }
+
+            dataContext.SubmitChanges();
 
         }
 
@@ -157,29 +159,23 @@ namespace project
         {
             bool encontrado = false;
 
-            myConnection mc = new myConnection();
-            SqlConnection cnn = mc.createConnection();
-            SqlCommand command = mc.createCommand(cnn);
 
-            command.CommandText = "SELECT NOMBRE,CONTRASENA,CEDULA,TIPO FROM CLIENTE";
+            DataContext dataContext = new DataContext(myConnection.getConnection());
+            var tabla = dataContext.GetTable<tablaCliente>();
 
-            cnn.Open();
+            var buscar = from c in tabla
+                         where c.NOMBRE.Equals(usuario) && c.CONTRASENA.Equals(contra)
+                         select c;
 
-            SqlDataReader re = command.ExecuteReader();
+            foreach (var cuenta in buscar)
+	{
+        encontrado = true;
+        nombreSeccionActual = cuenta.NOMBRE;
+        idSeccionActual = cuenta.ID_CLIENTE;
+        tipoClienteSeccionActual = cuenta.PRIVILEGIO;
+		 
+	}
 
-            while (re.Read())
-            {
-                if (re["NOMBRE"].ToString().Equals(usuario) && re["CONTRASENA"].ToString().Equals(contra))
-                {
-                    encontrado = true;
-                    nombreSeccionActual = usuario;
-                    idSeccionActual = Convert.ToInt32(re["CEDULA"]);
-                    tipoClienteSeccionActual = re["TIPO"].ToString();
-
-                }
-            }
-
-            cnn.Close();
             return encontrado;
         }
 
@@ -190,25 +186,18 @@ namespace project
             
             string salida = null;
 
-            myConnection mc = new myConnection();
-            SqlConnection cnn = mc.createConnection();
-            SqlCommand command = mc.createCommand(cnn);
+            DataContext dataContext = new DataContext(myConnection.getConnection());
+            var tabla = dataContext.GetTable<tablaCliente>();
 
-            command.CommandText = "SELECT NOMBRE,CONTRASENA,PRIVILEGIO FROM CLIENTE";
+            var cliente = from c in tabla
+                          where c.NOMBRE.Equals(usuario) && c.CONTRASENA.Equals(contra)
+                          select c;
 
-            cnn.Open();
-
-            SqlDataReader re = command.ExecuteReader();
-
-            while (re.Read())
+            foreach (var c in cliente)
             {
-                if (re["NOMBRE"].ToString().Equals(usuario) && re["CONTRASENA"].ToString().Equals(contra))
-                {
-                    salida = re["PRIVILEGIO"].ToString();
-                }
+                salida = c.PRIVILEGIO;
             }
 
-            cnn.Close();
             return salida;
 
 
