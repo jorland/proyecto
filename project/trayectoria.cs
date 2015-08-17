@@ -15,7 +15,7 @@ namespace project
     {
         private string PaisOrigen;
         private string paisDestino;
-
+        
         //contructor recibe los paises destino y origen 
         public trayectoria(string PaisOrigen,string paisDestino)
         {
@@ -36,14 +36,20 @@ namespace project
 
         private void trayectoria_Load(object sender, EventArgs e)
         {
-            string url = string.Format("http://pruebamaps.webatu.com/prueba.html?po={0}&pd={1}",PaisOrigen,paisDestino);
 
+            string url = string.Format("http://pruebamaps.webatu.com/prueba.html?po={0}&pd={1}", PaisOrigen, paisDestino);
             webBrowser1.Navigate(url);//abre el sitio web en el componente webBrowser
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = string.Format("http://pruebamaps.webatu.com/prueba.html?po={0}&pd={1}", PaisOrigen, paisDestino);
+            System.Diagnostics.Process.Start(url);
         }
     }
 }

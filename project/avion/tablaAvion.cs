@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
 
-namespace project.avion
+namespace project
 {
      [Table(Name = "[AEROLINEA_UAM].[dbo].[AVION]")]
 
@@ -15,7 +15,7 @@ namespace project.avion
          //08-08-2015
          //Mapp de la tabla Avion
 
-        [Column(Name="ID_AVION",IsPrimaryKey=true)]
+        [Column(Name = "ID_AVION", IsPrimaryKey = true, DbType = "int NOT NULL", IsDbGenerated = true)]
         public int ID_AVION { get; set; }
 
         [Column(Name="NOMBRE_AVION")]
@@ -25,7 +25,7 @@ namespace project.avion
         public int ID_VUELO { get; set; }
 
         [Column(Name = "ESTADO")]
-        public int ESTADO { get; set; }
+        public string ESTADO { get; set; }
 
     }
 }

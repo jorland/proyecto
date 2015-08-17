@@ -203,6 +203,32 @@ namespace project
 
         }
 
+        public static Boolean estaInactivo(string usuario, string contra)
+        {
+
+            bool condicion = false;
+
+
+            DataContext dataContext = new DataContext(myConnection.getConnection());
+            var tabla = dataContext.GetTable<tablaCliente>();
+
+            var buscar = from c in tabla
+                         where c.NOMBRE.Equals(usuario) && c.CONTRASENA.Equals(contra)
+                         select c;
+
+            foreach (var cuenta in buscar)
+            {
+                if (cuenta.CONDICION.Equals("inactivo"))
+                {
+                    condicion = true; 
+                }
+
+            }
+
+            return condicion;
+
+        }
+
         public  Boolean clienteDuplicado(){
             Boolean salida = false;
             var tabla = dataContext.GetTable<tablaCliente>();

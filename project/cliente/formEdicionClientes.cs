@@ -42,7 +42,7 @@ namespace project
 
                 DataGridViewRow fila = dataGridView1.CurrentRow;
                 int id = ((Int32)fila.Cells[0].Value);
-                cliente.inactivarCliente(id,"Inactivo");
+                cliente.inactivarCliente(id,"inactivo");
                 MessageBox.Show("Usuario Inactivado de la base de datos.");
                 actualizarGrid();
             }

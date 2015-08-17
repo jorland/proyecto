@@ -29,29 +29,36 @@ namespace project
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             
-            if (cliente.login(txtNombre.Text, txtContrasena.Text))
-	        {
-                if (cliente.getPrivilegio(txtNombre.Text, txtContrasena.Text).Equals("adm"))
-                {
-                   
-                    formAdm open= new formAdm();
-                    this.Hide();
-                    open.Show();
-                }
-                else
-                {
-                    formEdicionVoletos open = new formEdicionVoletos();
-                    this.Hide();
-                    open.Show();
-
-                }
-
+            if (cliente.estaInactivo(txtNombre.Text, txtContrasena.Text))
+            {
+                MessageBox.Show("Usuario inactivo");
             }
             else
             {
-                MessageBox.Show("La información del usuario es incorrecta. Digite un nuevo usuario.");
+
+                if (cliente.login(txtNombre.Text, txtContrasena.Text))
+                {
+                    if (cliente.getPrivilegio(txtNombre.Text, txtContrasena.Text).Equals("adm"))
+                    {
+
+                        formAdm open = new formAdm();
+                        this.Hide();
+                        open.Show();
+                    }
+                    else
+                    {
+                        formEdicionVoletos open = new formEdicionVoletos();
+                        this.Hide();
+                        open.Show();
+
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("La información del usuario es incorrecta. Digite un nuevo usuario.");
+                }
             }
-           
            
         }
 

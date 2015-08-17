@@ -15,7 +15,7 @@ namespace project
     class TablaAsientos
     {
 
-        [Column(Name = "ID_ASIENTO", IsPrimaryKey = true)]
+        [Column(Name = "ID_ASIENTO", IsPrimaryKey = true, DbType = "int NOT NULL", IsDbGenerated = true)]
         public int ID_ASIENTO { get; set; }
 
         [Column]

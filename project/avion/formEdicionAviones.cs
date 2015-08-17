@@ -37,9 +37,8 @@ namespace project
 
         public void actualizarGrid()
         {
-            DataSet ds = new DataSet();
-            avion.verAviones().Fill(ds, "AEROLINEA_UAM");
-            dataGridView1.DataSource = ds.Tables["AEROLINEA_UAM"];
+
+            dataGridView1.DataSource = avion.verAviones();
         }
 
         private void formEdicionAviones_VisibleChanged(object sender, EventArgs e)
@@ -84,11 +83,10 @@ namespace project
             asientos.ShowDialog();
         }
 
-        public void actualizarGridCriterio(string nombre)
+        public void actualizarGridCriterio(int nombre)
         {
-            DataSet ds = new DataSet();
-            avion.verAvionesCriterio(nombre).Fill(ds, "AEROLINEA_UAM");
-            dataGridView1.DataSource = ds.Tables["AEROLINEA_UAM"];
+
+            dataGridView1.DataSource = avion.verAvionesCriterio(nombre);
         }
 
 
@@ -100,7 +98,7 @@ namespace project
             }
             else
             {
-                actualizarGridCriterio(textBox1.Text);
+                actualizarGridCriterio(Convert.ToInt32(textBox1.Text));
             }
 
         }

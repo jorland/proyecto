@@ -31,33 +31,10 @@ using System.Data.Linq;
 
 namespace project
 {
-    [Table(Name = "[AEROLINEA_UAM].[dbo].[VUELO]")]
+   
     class Vuelo
     {
 
-        [Column(Name = "ID_VUELO", IsPrimaryKey = true)]
-        public int ID_VUELO { get; set; }
-
-        [Column]
-        public float MILLAS { get; set; }
-
-        [Column]
-        public string ORIGEN { get; set; }
-
-        [Column]
-        public string DESTINO { get; set; }
-
-        [Column]
-        public string FECHA { get; set; }
-
-        [Column]
-        public int ID_TICKET { get; set; }
-
-        [Column]
-        public int ID_AVION { get; set; }
-
-        [Column]
-        public float PRECIO_DOLARES { get; set; }
 
         ////Variables
         //private int idVuelo;
@@ -159,7 +136,7 @@ namespace project
         }//Fin de cantAsientos
 
         //Metodo de retorna los vuelos por medio de una sentencia de sql
-        public static IQueryable<Vuelo> verVuelos()
+        public static IQueryable verVuelos()
         {
             ////Instancia de la clase myConnection para utilizar la base de datos
             //myConnection myConnection = new myConnection();
@@ -168,16 +145,18 @@ namespace project
             //SqlDataAdapter da = new SqlDataAdapter(consulta, conexion); //Transfiere los datos
             //return da; //retorna la variable llena al string
 
+           
             DataContext dc = new DataContext(myConnection.getConnection());
-            var verTodos =
-            from vuelo in dc.GetTable<Vuelo>()
-            select vuelo;
+            var tabla = dc.GetTable<tablaVuelo>();
+            var ver = from v in tabla
+                      select new {ID_VUELO = v.ID_VUELO,ID_AVION=v.ID_AVION,ORIGEN=v.ORIGEN,DESTINO=v.DESTINO,FECHA=v.FECHA,MILLAS = v.MILLAS.ToString(),PRECIO=v.PRECIO_DOLARES.ToString(),ID_TICKEET=v.ID_TICKET };
+            return ver;
 
-            return verTodos;
+
         }//Fin de verVuelos
 
         //Metodo para realizar la conexion y la sentencia de SQL
-        public static IQueryable<Vuelo> verVuelos(string pais)
+        public static IQueryable verVuelos(string pais)
         {
             ////Instancia de la clase myConnection para utilizar la base de datos
             //myConnection myConnection = new myConnection();
@@ -186,14 +165,14 @@ namespace project
             //SqlDataAdapter da = new SqlDataAdapter(consulta, conexion); //Transfiere los datos
             //return da; //retorna la variable llena al string
 
+            
+           
             DataContext dc = new DataContext(myConnection.getConnection());
-            var ver =
-            from vuelo in dc.GetTable<Vuelo>()
-            where vuelo.DESTINO.Equals(pais)
-            select vuelo;
-
+            var tabla = dc.GetTable<tablaVuelo>();
+            var ver = from v in tabla
+                      where v.DESTINO.Equals(pais)
+                      select new {ID_VUELO = v.ID_VUELO,ID_AVION=v.ID_AVION,ORIGEN=v.ORIGEN,DESTINO=v.DESTINO,FECHA=v.FECHA,MILLAS = v.MILLAS.ToString(),PRECIO=v.PRECIO_DOLARES.ToString(),ID_TICKEET=v.ID_TICKET };
             return ver;
-
         }
 
 
@@ -201,11 +180,11 @@ namespace project
         public static void Agregar(int idvuelo, string origen, string destino, float millas, string fecha, int idavion, float precioDolar)
         {
             DataContext dc = new DataContext(myConnection.getConnection());
-            var Customers = dc.GetTable<Vuelo>();
+            var Customers = dc.GetTable<tablaVuelo>();
 
-            var insert = dc.GetTable<Vuelo>();
+            var insert = dc.GetTable<tablaVuelo>();
 
-            Vuelo newInsert = new Vuelo { ID_VUELO = idvuelo, ORIGEN = origen, DESTINO = destino, MILLAS = millas, FECHA = fecha, ID_AVION = idavion, PRECIO_DOLARES = precioDolar };
+            tablaVuelo newInsert = new tablaVuelo { ID_VUELO = idvuelo, ORIGEN = origen, DESTINO = destino, MILLAS = millas, FECHA = fecha, ID_AVION = idavion, PRECIO_DOLARES = precioDolar,ID_TICKET=0 };
             insert.InsertOnSubmit(newInsert);
             dc.SubmitChanges();
 

@@ -30,9 +30,8 @@ namespace project
         }
         public void actualizarGrid()
         {
-            DataSet ds = new DataSet();
-            avion.verAsientosCriterio(idAvion).Fill(ds, "AEROLINEA_UAM");
-            dataGridView1.DataSource = ds.Tables["AEROLINEA_UAM"];
+
+            dataGridView1.DataSource = avion.verAsientos();
         }
 
         private void button2_Click(object sender, EventArgs e)
