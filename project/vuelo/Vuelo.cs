@@ -177,7 +177,7 @@ namespace project
 
 
         //Metodo para la comunicacion con la BD y llamar al SP
-        public static void Agregar(int idvuelo, string origen, string destino, float millas, string fecha, int idavion, float precioDolar)
+        public static void Agregar(int idvuelo, string origen, string destino, int millas, string fecha, int idavion, Decimal precioDolar)
         {
             DataContext dc = new DataContext(myConnection.getConnection());
             var Customers = dc.GetTable<tablaVuelo>();
@@ -189,5 +189,23 @@ namespace project
             dc.SubmitChanges();
 
         }//Fin de agregar vuelo
+
+        public static void eliminarVuelo(int id) {
+
+            DataContext dc = new DataContext(myConnection.getConnection());
+            var tabla = dc.GetTable<tablaVuelo>();
+            var vuelos = from v in tabla
+                           where v.ID_AVION.Equals(id)
+                           select v;
+
+            foreach (var item in vuelos)
+            {
+                tabla.DeleteOnSubmit(item);
+                dc.SubmitChanges();
+            }      
+        
+        
+        }
+
     } //Fin de la clase Vuelo
 } //Fin del Proyecto

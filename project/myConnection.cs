@@ -5,39 +5,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace project
 {
     class myConnection
     {
-        //static myConnection mc = new myConnection();
-        private static string sqlConnection = "Data Source = EQUIPO ;Initial catalog=AEROLINEA_UAM;Integrated Security=SSPI";
-
         public static string getConnection(){
+
+            string sqlConnection="";
+            SqlConnection cnn=null;
+
+            try
+            {
+                sqlConnection = "Data Source = EQUIPo ;Initial catalog=AEROLINEA_UAM;Integrated Security=SSPI";
+                cnn = new SqlConnection(sqlConnection);
+                cnn.Open();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error al comunicarse con la base de datos");
+                cnn.Close();
+            }
             return sqlConnection;
+            
         }
-        //public static SqlConnection  getConnection(){
-        //    SqlConnection cnn = mc.createConnection();
-        //    return cnn;
-        //}
-
-        //public static SqlCommand getCommand()
-        //{
-        //    SqlCommand command = mc.createCommand(getConnection());
-        //    return command;
-        //}
-
-
-        public SqlConnection createConnection()
-        {
-            SqlConnection connection = new SqlConnection(sqlConnection);
-            return connection;
-        }
-
-        public SqlCommand createCommand(SqlConnection cnn)
-        {
-            SqlCommand sqlcommand = new SqlCommand(sqlConnection,cnn);
-            return sqlcommand;
-        }
+   
     }
 }

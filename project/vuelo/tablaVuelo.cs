@@ -13,10 +13,10 @@ namespace project
     {
 
         [Column(Name = "ID_VUELO", IsPrimaryKey = true, DbType = "int NOT NULL", IsDbGenerated = false)]
-        public int? ID_VUELO { get; set; }
+        public int ID_VUELO { get; set; }
 
         [Column(Name = "MILLAS")]
-        public float MILLAS { get; set; }
+        public int MILLAS { get; set; }
 
        [Column(Name = "ORIGEN")]
         public string ORIGEN { get; set; }
@@ -28,12 +28,12 @@ namespace project
         public string FECHA { get; set; }
 
         [Column(Name = "ID_TICKET")]
-        public int? ID_TICKET { get; set; }
+        public int ID_TICKET { get; set; }
 
         [Column(Name = "ID_AVION")]
-        public int? ID_AVION { get; set; }
+        public int ID_AVION { get; set; }
 
         [Column(Name = "PRECIO_DOLARES")]
-        public float? PRECIO_DOLARES { get; set; }
+        public Decimal PRECIO_DOLARES { get; set; }
     }
 }

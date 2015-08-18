@@ -121,9 +121,25 @@ namespace project
                     elimina.DeleteOnSubmit(item);
                     dc.SubmitChanges();
                 }
-                         
+
+                eliminarAsientos(id);
+                Vuelo.eliminarVuelo(id);
 
             }
+
+            public static void eliminarAsientos(int id) {
+
+                var eliminaAsientos = dc.GetTable<TablaAsientos>();
+                var asientos = from a in eliminaAsientos
+                               where a.ID_AVION.Equals(id)
+                               select a;
+                foreach (var item in asientos)
+                {
+                    eliminaAsientos.DeleteOnSubmit(item);
+                    dc.SubmitChanges();
+                }
+            
+            } 
 
             public static void inactivarAsiento(int idAsiento)
             {
@@ -154,6 +170,7 @@ namespace project
                     a.ESTADO = "R";
 
                 }
+                dc.SubmitChanges();
             }
 
             public static void cambiarEstado(int id)

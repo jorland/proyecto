@@ -42,11 +42,11 @@ namespace project
             //Se declaran las variables
             int id;
             int idAvion;
-            float millas;
+            int millas;
             string origenVuelo;
             string destinoVuelo;
             string fechaHora;
-            float precioDolares;
+            Decimal precioDolares;
 
             //Try para la captura de excepciones
             try
@@ -62,11 +62,11 @@ namespace project
                 {
                     id = Convert.ToInt32(txtIdVuelo.Text);
                     idAvion = Convert.ToInt32(cbAvion.Text);
-                    millas = float.Parse(txtMillasVuelo.Text);
+                    millas = int.Parse(txtMillasVuelo.Text);
                     origenVuelo = cbOrigenVuelo.Text;
                     destinoVuelo = cbDestinoVuelo.Text;
                     fechaHora = cbFecha.Value.ToShortDateString() + "---" + cbHora.Value.ToShortTimeString();
-                    precioDolares = float.Parse(txtPrecio.Text);
+                    precioDolares = Decimal.Parse(txtPrecio.Text);
                 }
                 //Si el origen del vuelo es igual a el destino muestra el mensaje
                 if (cbOrigenVuelo.Text == cbDestinoVuelo.Text)
@@ -87,7 +87,7 @@ namespace project
                 MessageBox.Show("Vuelo ingresado");
                 asignarVueloEnAsientos(idAvion, id);
                 avion.cambiarEstado(idAvion);
-                actualizarDataGrid();
+                limpiarComponentes();
             } //Fin del try
 
             catch (Exception ex)
@@ -97,6 +97,15 @@ namespace project
 
         } //Fin del boton button1_Click (Ingresar vuelo)
 
+        public void limpiarComponentes() {
+           actualizarDataGrid();
+           cbAvion.ResetText();
+           cbAvion.Items.Clear();
+           txtIdVuelo.ResetText();
+           txtMillasVuelo.ResetText();
+           txtPrecio.ResetText();
+           llenarComboBoxAviones();
+        }
 
         //nuevo
         public void asignarVueloEnAsientos(int idAvion, int idVuelo)
@@ -121,7 +130,7 @@ namespace project
         public Boolean validarFecha()
         {
             Boolean salida = true; ; //si la salida es true la fecha esta bien
-            if (cbFecha.Value.Date == DateTime.Today.Date && cbHora.Value <= DateTime.Now)
+            if (cbFecha.Value.Date <= DateTime.Today.Date && cbHora.Value <= DateTime.Now)
             {
                 salida = false;//si la salida es false la fecha esta mal
 

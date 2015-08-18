@@ -77,10 +77,18 @@ namespace project
         private void button6_Click(object sender, EventArgs e)
         {
             DataGridViewRow fila = dataGridView1.CurrentRow;
-            int idAvion = Convert.ToInt32(fila.Cells[0].Value);
+            int idAvion;
 
-            formAsientos asientos = new formAsientos(idAvion);
-            asientos.ShowDialog();
+            try
+            {
+                idAvion = Convert.ToInt32(fila.Cells[0].Value);
+                formAsientos asientos = new formAsientos(idAvion);
+                asientos.ShowDialog();
+            }
+            catch (Exception)
+            { 
+
+            }
         }
 
         public void actualizarGridCriterio(int nombre)
