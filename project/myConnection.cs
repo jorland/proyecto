@@ -18,7 +18,7 @@ namespace project
 
             try
             {
-                sqlConnection = "Data Source = EQUIPo ;Initial catalog=AEROLINEA_UAM;Integrated Security=SSPI";
+                sqlConnection = "Data Source = EQUIPO ;Initial catalog=AEROLINEA_UAM;Integrated Security=SSPI";
                 cnn = new SqlConnection(sqlConnection);
                 cnn.Open();
             }
