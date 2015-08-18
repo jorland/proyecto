@@ -112,7 +112,7 @@ namespace project
                 asiento.ID_VUELO = idVuelo;
             }
 
-
+            dc.SubmitChanges();
 
         }//Fin de asignarVueloEnAsientos
 

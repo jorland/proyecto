@@ -72,7 +72,12 @@ namespace project
                       where Asi.ID_VUELO.Equals(id) && Asi.ESTADO.Equals("D")
                       select Asi;
 
-                comboBox1.Items.Add(qry.ToString());
+                foreach (var item in qry)
+                {
+                    comboBox1.Items.Add(item.CONS_ASIENTO);
+                }
+
+                
             }
             catch (Exception)
             {
@@ -152,7 +157,7 @@ namespace project
                 fecha = fila.Cells[4].Value.ToString(); //Guarda la fecha del vuelo del DataGridView (Lista de vuelo) de la 4 en la variable fecha
                 origen = fila.Cells[2].Value.ToString(); //Guarda el valor del DataGridView (Lista de Vuelos) de la posicion 2 en la variablie Origen
                 destino = fila.Cells[3].Value.ToString(); //Guarda el destino del DataGridView (Lista de Vuelos) de la posicion 3 en la variable destino
-                precio = Double.Parse(fila.Cells[7].Value.ToString()); //Guarda el precio del DataGridView (Lista de Vuelos) de la posicion 7 en la variable precio
+                precio = Double.Parse(fila.Cells[6].Value.ToString()); //Guarda el precio del DataGridView (Lista de Vuelos) de la posicion 7 en la variable precio
                 comboBox1.Items.Clear(); //Limpia el ComboBox
                 comboBox1.ResetText(); //Reinicia el ComboBox
 

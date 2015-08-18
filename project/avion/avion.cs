@@ -77,7 +77,7 @@ namespace project
 
             for (int i = 0; i < nAsientos; i++)
 			{
-			   TablaAsientos asiento = new TablaAsientos{CONS_ASIENTO=i,ESTADO="D",ID_AVION=ultimoAvion()};
+			    TablaAsientos asiento = new TablaAsientos{CONS_ASIENTO=i,ESTADO="D",ID_AVION=ultimoAvion()};
                 table.InsertOnSubmit(asiento);
                 dc.SubmitChanges();
 			}
@@ -130,7 +130,7 @@ namespace project
 
                 var tabla = dc.GetTable<TablaAsientos>();
                 var asientos = from a in tabla
-                              where a.ID_ASIENTO.Equals(idAsiento)
+                              where a.CONS_ASIENTO.Equals(idAsiento)
                               select a;
 
                 foreach (var a in asientos)
@@ -138,6 +138,7 @@ namespace project
                     a.ESTADO = "N";
                     
                 }
+                dc.SubmitChanges();
 
             }
 
@@ -173,6 +174,7 @@ namespace project
                         avion.ESTADO = "D";
                     }
                 }
+                dc.SubmitChanges();
             }
             //nuevo
             public static string estadoAvion(int id)
